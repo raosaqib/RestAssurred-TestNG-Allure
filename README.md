@@ -27,7 +27,7 @@ public void ValidateUserIsAbleToRunTherequestandGetsSuccessstatusCode.
 
 Each method is being implemented as severity with allure feature 
 How To use the Framework-
-1)If you want to add any emdpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
+1)If you want to add any endpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
 2)OR To write any new test case .Just call the helper class method in test for existing services or new.
 rite the method in the test class.
 After running the test allure results filder should generate
