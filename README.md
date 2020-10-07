@@ -13,8 +13,8 @@ clone the project and can be run from command line or editor- mvn clean test
 - API library for automationRestAssurred
 - TestNG - Test Management library
 -Allure reports
-#Framework is being implemented using best practices as describe below
-#POJO classes implementation of the services.--com.gk.openweather.station.model
+-Framework is being implemented using best practices as describe below
+-POJO classes implementation of the services.--com.gk.openweather.station.model
 -Services has been implemented--com.gk.openweather.station.service
 -TestRunner- you can run the tests from com.gk.openweather.station.test==OpenweatherTestRunnerE2E.
 -JSON data handler has been defined on the runner class and data can be fetched from json to tests
