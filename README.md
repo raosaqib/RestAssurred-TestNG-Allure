@@ -35,15 +35,12 @@ After running the test allure results filder should generate
 ===============================
 download https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.0/ for mac or windows
 allure --version
-Navigate to project directory & run allure serve allure-results
-
-In order to generate a report, we should install Allure command-line interpreter.
-
-Download the latest version as a zip archive from bintray.
-Then, click the Files tab and then download the .zip file for windows. For Linux, you can download .tgz file. For Mac use brew to install allure.
-Unpack the archive to allure-commandline directory.[C:\automationsoftware\allure-2.13.0\bin]
-
-Navigate to bin directory.
-Add allure to system PATH.
+- Navigate to project directory & run allure serve allure-results
+- In order to generate a report, we should install Allure command-line interpreter.
+- Download the latest version as a zip archive from bintray.
+- Then, click the Files tab and then download the .zip file for windows. For Linux, you can download .tgz file. For Mac use brew to install allure.
+- Unpack the archive to allure-commandline directory.[C:\automationsoftware\allure-2.13.0\bin]
+- Navigate to bin directory.
+- Add allure to system PATH.
 NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
 -
