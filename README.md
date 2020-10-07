@@ -19,8 +19,7 @@ Services has been implemented--com.gk.openweather.station.service
 TestRunner- you can run the tests from com.gk.openweather.station.test==OpenweatherTestRunnerE2E.
 JSON data handler has been defined on the runner class and data can be fetched from json to tests
 JSON path usage to capture Attributes
------------------------------------------------------------------------------------------------
-Below are the few methods has been implemented-get()/post()/delete() apart from this there are six more tests
+==Below are the few methods has been implemented-get()/post()/delete() apart from this there are six more tests
 validateUserShouldableToCreatStation()- to create a station on openmaps.
 validateUserIsAbleToDeleteStation()-To delete the latest station created
 public void ValidateUserIsAbleToRunTherequestandGetsSuccessstatusCode.
