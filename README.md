@@ -1,4 +1,4 @@
-#servicejectmodel-#API Automation #TestNG
+#serviceOjectModel-#API Automation #TestNG
 prerequisite: Java is installed, IDE-eclipse/IntelliJ
 API http://api.openweathermap.org/data/3.0/stations
 
