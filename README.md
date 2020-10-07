@@ -29,7 +29,7 @@ clone the project and can be run from command line or editor- mvn clean test
 - 1)If you want to add any endpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
 - 2)OR To write any new test case .Just call the helper class method in test for existing services or new.
 - write the method in the test class.
-After running the test allure results filder should generate
+- After running the test allure results filder should generate
 -------------------------------
 #How to Generate Allure Reports
 ===============================
@@ -42,5 +42,4 @@ allure --version
 - Unpack the archive to allure-commandline directory.[C:\automationsoftware\allure-2.13.0\bin]
 - Navigate to bin directory.
 - Add allure to system PATH.
-NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
--
+- NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
