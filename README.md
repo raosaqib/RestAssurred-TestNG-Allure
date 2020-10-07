@@ -24,7 +24,6 @@ Below are the few methods has been implemented-get()/post()/delete() apart from 
 validateUserShouldableToCreatStation()- to create a station on openmaps.
 validateUserIsAbleToDeleteStation()-To delete the latest station created
 public void ValidateUserIsAbleToRunTherequestandGetsSuccessstatusCode.
-
 Each method is being implemented as severity with allure feature 
 How To use the Framework-
 1)If you want to add any endpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
