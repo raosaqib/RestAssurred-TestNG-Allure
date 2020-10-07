@@ -4,8 +4,8 @@ API http://api.openweathermap.org/data/3.0/stations
 
 conventions:- Above mention API is implemented in a microservices way, so model name and other naming conventions has been donein the same way
 
-clone the project and can be run from command line or editor- mvn clean test
-#Note:A Folder has been created as src/test/java/resourcesc.Ideally it should be src/test/resources.
+- clone the project and can be run from command line or editor- mvn clean test
+- #Note:A Folder has been created as src/test/java/resourcesc.Ideally it should be src/test/resources.
 #Technologies/Tools used in building the framework
 - Eclipse - IDE
 - Maven - Build automation tool
