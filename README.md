@@ -10,7 +10,7 @@ clone the project and can be run from command line or editor- mvn clean test
 - Eclipse - IDE
 - Maven - Build automation tool
 - Java - Programming language
--RestAssurred
+- API library for automationRestAssurred
 - TestNG - Test Management library
 -Allure reports
 #Framework is being implemented using best practices as describe below
