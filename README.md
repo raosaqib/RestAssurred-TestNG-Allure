@@ -14,17 +14,18 @@ clone the project and can be run from command line or editor- mvn clean test
 - TestNG - Test Management library
 -Allure reports
 #Framework is being implemented using best practices as describe below
-POJO classes implementation of the services.--com.gk.openweather.station.model
-Services has been implemented--com.gk.openweather.station.service
-TestRunner- you can run the tests from com.gk.openweather.station.test==OpenweatherTestRunnerE2E.
-JSON data handler has been defined on the runner class and data can be fetched from json to tests
-JSON path usage to capture Attributes
-==Below are the few methods has been implemented-get()/post()/delete() apart from this there are six more tests
-validateUserShouldableToCreatStation()- to create a station on openmaps.
-validateUserIsAbleToDeleteStation()-To delete the latest station created
-public void ValidateUserIsAbleToRunTherequestandGetsSuccessstatusCode.
-Each method is being implemented as severity with allure feature 
-How To use the Framework-
+-POJO classes implementation of the services.--com.gk.openweather.station.model
+-Services has been implemented--com.gk.openweather.station.service
+-TestRunner- you can run the tests from com.gk.openweather.station.test==OpenweatherTestRunnerE2E.
+-JSON data handler has been defined on the runner class and data can be fetched from json to tests
+-JSON path usage to capture Attributes
+==Below are the few methods has been implemented-
+-get()/post()/delete() apart from this there are six more tests
+-validateUserShouldableToCreatStation()- to create a station on openmaps.
+-validateUserIsAbleToDeleteStation()-To delete the latest station created
+-public void ValidateUserIsAbleToRunTherequestandGetsSuccessstatusCode.
+-Each method is being implemented as severity with allure feature 
+-How To use the Framework-
 1)If you want to add any endpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
 2)OR To write any new test case .Just call the helper class method in test for existing services or new.
 rite the method in the test class.
