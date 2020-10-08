@@ -3,7 +3,7 @@ prerequisite: Java is installed, IDE-eclipse/IntelliJ
 API http://api.openweathermap.org/data/3.0/stations
 
 - Naming Conventions:- Above mention API is implemented in a microservices way, so model name and other naming conventions has been donein the same way
-
+- Few screen-shot is being committed for demo purpose[It's not the right git practice]
 - clone the project and can be run from command line or editor- mvn clean test
 #Technologies/Tools used in building the framework
 - Eclipse - IDE
@@ -28,7 +28,8 @@ API http://api.openweathermap.org/data/3.0/stations
 - 1)If you want to add any endpints- Naviagte to Class EndPoints & define it there and define method in OpenMapsStationApihelper
 - 2)OR To write any new test case .Just call the helper class method in test for existing services or new.
 - write the method in the test class.
-- After running the test allure results filder should generate
+-Default test report is testng report -which can be find under testoutput folder
+- After running the test allure results folder should generate
 -------------------------------
 #How to Generate Allure Reports
 ===============================
