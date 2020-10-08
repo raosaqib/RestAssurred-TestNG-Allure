@@ -39,7 +39,10 @@ allure --version
 - In order to generate a report, we should install Allure command-line interpreter.
 - Download the latest version as a zip archive from bintray.
 - Then, click the Files tab and then download the .zip file for windows. For Linux, you can download .tgz file. For Mac use brew to install allure.
-- Unpack the archive to allure-commandline directory.[C:\automationsoftware\allure-2.13.0\bin]
-- Navigate to bin directory.
-- Add allure to system PATH.
+- Unpack the archive to allure-commandline directory and navigate to bin in my case it's.[C:\automationsoftware\allure-2.13.0\bin]
+- Navigate to bin directory.[copy the path up to bin
+- Add allure to system PATH.[define allure in env. varb and give the allure ]
+- check allure is available on the syatem now-allure --version 
+- navigate to project deirectoryand run the commab -allure serve allure -results
+
 - NOTE:-After importing the project you may see the error- Cannot switch on a value of type String for source level below 1.7. Only convertible int values or enum variables are permitted- please select the quickfix.(jre 1.7 & above]
