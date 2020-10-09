@@ -82,8 +82,8 @@ public class OpenMapsStationAPIHelper {
  *  user need to create a station
  */
 	@Step()
-	public Response createStation(String appId) {
-		StationBody opMapReqAddstation = createTestStation();
+	public Response createStation(String appId,String externalId,String name,double lat,double log ,int alt) {
+		StationBody opMapReqAddstation = createTestStation(externalId,name,lat,log,alt);
 		Response resp = getRequest(appId).body(opMapReqAddstation).post(Endpoints.CREATE_STATION).andReturn();
 		assertEquals(resp.getStatusCode(), HttpStatus.SC_CREATED, "created");
 		return resp;
@@ -104,13 +104,13 @@ public class OpenMapsStationAPIHelper {
 	 * @return
 	 */
 	@Step()
-	private StationBody createTestStation() {
+	private StationBody createTestStation(String externalId,String name,double lat,double log ,int alt) {
 		StationBody opMapReqAddstation = new StationBody();
-		opMapReqAddstation.setExternalId("Testing from pojo");
-		opMapReqAddstation.setName("global kin");
-		opMapReqAddstation.setLatitude(37.76);
-		opMapReqAddstation.setLongitude(32.1);
-		opMapReqAddstation.setAltitude(122);
+		opMapReqAddstation.setExternalId(externalId);
+		opMapReqAddstation.setName(name);
+		opMapReqAddstation.setLatitude(lat);
+		opMapReqAddstation.setLongitude(log);
+		opMapReqAddstation.setAltitude(alt);
 		return opMapReqAddstation;
 	}
 
