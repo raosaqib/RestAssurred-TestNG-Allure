@@ -2,9 +2,7 @@ package com.gk.openweather.station.test;
 
 import java.io.IOException;
 import java.io.InputStream;
-
 import org.apache.http.HttpStatus;
-import org.apache.http.protocol.HTTP;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.Assert;
