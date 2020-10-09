@@ -16,7 +16,7 @@ import com.gk.openweather.station.service.OpenMapsStationAPIHelper;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
-public class com.gk.openweather.station.test {
+public class OpenweatherTestRunnerE2E{
 	private OpenMapsStationAPIHelper openWeatherMapsAPI;
 
 	JSONObject stationWeatherMapApiParams;
