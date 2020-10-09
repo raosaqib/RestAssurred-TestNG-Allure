@@ -12,12 +12,7 @@
 		"external_id":"captown ",
 		"name":"global kin",
 		"latitude":"37.73",
-		"longitude":"356.98",
+		"longitude":"100",
 		"altitude":"532"	
-		},
-	"validUser":{
-		"username":"standard_user",
-		"password":"secret_sauce"
-		
-	}
+		}
 	}
