@@ -8,9 +8,7 @@ import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.gk.openweather.station.service.OpenMapsStationAPIHelper;
-
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 
@@ -43,13 +41,18 @@ public class OpenweatherTestRunnerE2E{
 		}
 	}
 
+	//longitute valus should be in between-180 to 180
 	@Test(description = "Validate user is able to create station", priority = 10)
 	@Severity(SeverityLevel.BLOCKER)
 	public void validateUserShouldableToCreatStation() {
 		String appId = stationWeatherMapApiParams.getJSONObject("validAppId").getString("appid");
-
-		latestCreatedStation = openWeatherMapsAPI.createStation(appId).jsonPath().getString("ID");
-		int statuscode = openWeatherMapsAPI.createStation(appId).getStatusCode();
+		String externalId= stationWeatherMapApiParams.getJSONObject("requestBody").getString("external_id");
+		String name= stationWeatherMapApiParams.getJSONObject("requestBody").getString("name");
+		double lati= stationWeatherMapApiParams.getJSONObject("requestBody").getDouble("latitude");
+		double longi=stationWeatherMapApiParams.getJSONObject("requestBody").getDouble("longitude");
+		int alti=stationWeatherMapApiParams.getJSONObject("requestBody").getInt("altitude");
+		latestCreatedStation = openWeatherMapsAPI.createStation(appId,externalId,name,lati,longi,alti).jsonPath().getString("ID");
+		int statuscode  = openWeatherMapsAPI.createStation(appId,externalId,name,lati,longi,alti).getStatusCode();
 		Assert.assertEquals(statuscode, HttpStatus.SC_CREATED, "user is able to create station successfully");
 		System.out.println("stattion got created with the number =>>" + latestCreatedStation);
 
