@@ -98,7 +98,7 @@ public class OpenweatherTestRunnerE2E{
 		Assert.assertEquals(stauscode, HttpStatus.SC_OK, "User should get message for not found");
 	}
 
-	@Test(description = "Validate user gets BAD Request response code upon providing wrong stationId", priority = 50)
+	@Test(description = "Validate user gets BAD Request response code upon providing wrong stationId", priority = 60)
 	@Severity(SeverityLevel.MINOR)
 	public void validateSpecificStationByStationIdWrongStatId() {
 		String appid = stationWeatherMapApiParams.getJSONObject("validAppId").getString("appid");
@@ -108,7 +108,7 @@ public class OpenweatherTestRunnerE2E{
 
 	}
 
-	@Test(description = "Negative test--Validate upon passing a null value user shouldn't get success code", dependsOnMethods = "validateUserIsAbleToDeleteStation", priority = 50)
+	@Test(description = "Negative test--Validate upon passing a null value user shouldn't get success code", dependsOnMethods = "validateUserIsAbleToDeleteStation", priority = 70)
 	@Severity(SeverityLevel.MINOR)
 	public void validateSpecificStationByStationIdWrongStatIdRespValid() {
 		String appid = stationWeatherMapApiParams.getJSONObject("validAppId").getString("appid");
