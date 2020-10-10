@@ -95,7 +95,7 @@ public class OpenweatherTestRunnerE2E{
 		String appid = stationWeatherMapApiParams.getJSONObject("validAppId").getString("appid");
 		String validStationId = stationWeatherMapApiParams.getJSONObject("stationId").getString("mapStationId");
 		int stauscode = openWeatherMapsAPI.getSpecificStationStationResponse(appid, validStationId);
-		Assert.assertEquals(stauscode, HttpStatus.SC_OK, "User should get message for not found");
+		Assert.assertEquals(stauscode, HttpStatus.SC_OK, "User should get 200 in response");
 	}
 
 	@Test(description = "Validate user gets BAD Request response code upon providing wrong stationId", priority = 60)
