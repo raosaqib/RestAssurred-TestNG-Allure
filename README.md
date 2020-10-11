@@ -1,7 +1,6 @@
 #serviceOjectModel-#API Automation #TestNG
 prerequisite: Java is installed, IDE-eclipse/IntelliJ
-API http://api.openweathermap.org/data/3.0/stations
-
+API https://openweathermap.org/stations
 - Naming Conventions:- Above mention API is implemented in a microservices way, so model name and other naming conventions has been donein the same way
 - Few screen-shot is being committed for demo purpose[It's not the right git practice]
 - clone the project and can be run from command line or editor- mvn clean test
